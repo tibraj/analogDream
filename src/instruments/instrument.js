@@ -59,4 +59,64 @@ export default [
         yearOfRelease: 2012,
         image: 'https://cdn.mos.cms.futurecdn.net/bNXnfi2EppqFFBYfGS9aXA-970-80.jpg.webp'
     },
+    {
+        id: 7,
+        name: 'IK Multimedia UNO Synth',
+        price: 199,
+        sounds: 'Analogue',
+        effects: 'Yes',
+        sequencer: 'Yes',
+        yearOfRelease: 2019,
+        image: 'https://cdn.mos.cms.futurecdn.net/j4Up729dMy5FBHvjwf4EYk-970-80.jpg.webp'
+    },
+    {
+        id: 8,
+        name: 'Arturia Mini-Brute',
+        price: 499,
+        sounds: 'Analogue',
+        effects: 'Yes',
+        sequencer: 'Yes',
+        yearOfRelease: 2018,
+        image: 'https://cdn.mos.cms.futurecdn.net/qxYzgN4MrnN6GzCG2i58AX-970-80.jpg.webp'
+    },
+    {
+        id: 9,
+        name: 'Behringer Deep Mind 12',
+        price: 999,
+        sounds: 'Analogue',
+        effects: 'Yes',
+        sequencer: 'Yes',
+        yearOfRelease: 2017,
+        image: 'https://cdn.mos.cms.futurecdn.net/o3H4wXBGVg73nxjJnagEfW-970-80.jpg.webp'
+    },
+    {
+        id: 10,
+        name: 'Novation Peak',
+        price: 1299,
+        sounds: 'Analogue and Digital',
+        effects: 'Yes',
+        sequencer: 'Yes',
+        yearOfRelease: 2017,
+        image: 'https://cdn.mos.cms.futurecdn.net/vTzRCixTVtCStd4UPgCHxm-970-80.jpg.webp'
+    },
+    {
+        id: 11,
+        name: 'Dave Smith Instruments Tempest OB-6',
+        price: 3299,
+        sounds: 'Analogue',
+        effects: 'Yes',
+        sequencer: 'Yes',
+        yearOfRelease: 2017,
+        image: 'https://cdn.mos.cms.futurecdn.net/Puju7CpKiT3GtVDieNSSZB-970-80.jpg.webp'
+    },
+    {
+        id: 12,
+        name: 'Studiologic Sledge',
+        price: 899,
+        sounds: 'Virtual Analogue',
+        effects: 'Yes',
+        sequencer: 'No',
+        yearOfRelease: 2015,
+        image: 'https://cdn.mos.cms.futurecdn.net/c8ea63332520a14bec4cf994d7086cad-970-80.jpg.webp'
+    }
 ];
