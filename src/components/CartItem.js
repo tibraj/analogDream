@@ -6,7 +6,7 @@ export default function CartItem({name, cost, quantity}) {
         <div>
             <div>
                 <h1>{name}</h1>
-                <h2>Quanitity: {quanitity}</h2>
+                <h2>Quanitity: {quantity}</h2>
                 <h2>${cost}</h2>
             </div>
         </div>
