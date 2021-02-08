@@ -1,26 +1,30 @@
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Item from './components/Item.js'
 import instruments from './instruments/instrument.js'
+import Cart from './components/Cart.js'
 
 function App() {
+  console.log(instruments);
   const [cart, setCartItems] = useState([]);
   const handleCartAddition = (id) => {
     setCartItems(cart => {
-      const cartItem = cart.find(item => item.id === id);
+      const cartItem = cart.find(instrument => instrument.id === id);
       if(cartItem) {
-        return cart.map(item => {
-          if(item.id !== id) return item;
-          return {...cartItem, quantity: item.quantity + 1};
+        return cart.map(instrument => {
+          if(instrument.id !== id) return instrument;
+          console.log(instrument.id);
+          return {...cartItem, quantity: instrument.quantity + 1};
         });
       }
-      const item = items.find(item => item.id === id);
-      return [...cart, {...item, quanitty: 1}];
+      const instrument = instruments.find(instrument => instrument.id === id);
+      return [...cart, {...instrument, quanitty: 1}];
     });
   }
 
   const totalCost = cart.reduce(
-    (acc, item) => acc + item.price * item.quanitity, 0
+    (acc, instrument) => acc + instrument.price * instrument.quanitity, 0
   );
   return (
     <div className="App">

@@ -1,5 +1,5 @@
 import React from 'react';
-import CartItem from './CartItem/CartItem';
+import CartItem from './CartItem';
 
 export default function Cart({cartItems, totalCost}) {
     return (
@@ -15,10 +15,10 @@ export default function Cart({cartItems, totalCost}) {
                             cost={item.price * item.quantity}
                         />
                     ))}
-                    <h2>Total Cost: ${totalCost.toFixed(2)}</h2>
+                    <h2>Total Cost: ${totalCost}</h2>
                 </div>
             ) : (
-                <h1>Your Cart</h1>
+                <h1>Your Cart Is Empty</h1>
             )}
         </div>
     );

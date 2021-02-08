@@ -1,25 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 
-export default function Item({instruments}) {
-    console.log(instruments);
-    
+
+export default function Item({name, image, price, sounds, effects, sequencer, yearOfRelease}) {
     return (
     <div className='items'>
-        {instruments.map(instrument => (
-            <div key={instrument.id}>
-                <h1 className='name'>{instrument.name}</h1>
-                <img src={instrument.image} alt=""/>
-                <h2 className='price'>${instrument.price}</h2>
-                <p className='sounds'>Sounds: {instrument.sounds}</p>
-                <p className='effects'>Effects: {instrument.effects}</p>
-                <p className='sequencer'>Sequencer: {instrument.sequencer}</p>
-                <p className='year-of-release'>Year of Release: {instrument.yearOfRelease}</p>
+                <h1 className='name'>{name}</h1>
+                <img src={image} alt=""/>
+                <h2 className='price'>${price}</h2>
+                <p className='sounds'>Sounds: {sounds}</p>
+                <p className='effects'>Effects: {effects}</p>
+                <p className='sequencer'>Sequencer: {sequencer}</p>
+                <p className='year-of-release'>Year of Release: {yearOfRelease}</p>
                 <button>Add to Cart</button>
+            <br/><br/><br/><br/>
             </div>
-        ))}
-    </div>   
-    );
+    )
+}; 
         
-}
+
