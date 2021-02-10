@@ -24,6 +24,9 @@ function Checkout(stripe, totalCost) {
             setStatus('error');
         }
     };
+    if (status === 'complete') {
+        return <div className='checkout'>Your Payment was Successful!</div>
+    }
 }
 
 export default injectStripe(Checkout);
