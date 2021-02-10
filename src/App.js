@@ -4,6 +4,9 @@ import './App.css';
 import Item from './components/Item.js'
 import instruments from './instruments/instrument.js'
 import Cart from './components/Cart.js'
+import { Elements, StripeProvider } from 'react-stripe-elements';
+import Checkout from './components/Checkout';
+
 function App() {
   console.log(instruments);
   const [cartItems, setCartItems] = useState([]);
@@ -36,6 +39,13 @@ function App() {
       </div>
       <div className="cart">
         <Cart cartItems={cartItems} totalCost={totalCost} />
+        {cartItems.length > 0 && (
+          <StripeProvider apiKey="public_key">
+            <Elements>
+              <Checkout totalCost={totalCost} />
+            </Elements>
+          </StripeProvider>
+        )}
       </div>
     </div>
   );
