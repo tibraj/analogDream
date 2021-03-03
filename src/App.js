@@ -8,6 +8,7 @@ import Cart from './components/Cart.js'
 import { Elements, StripeProvider } from 'react-stripe-elements';
 import Checkout from './components/Checkout';
 
+
 function App() {
   console.log(instruments);
   const [cartItems, setCartItems] = useState([]);
@@ -33,6 +34,7 @@ function App() {
       <header className="header">
         <Nav />
       </header>
+      <main className="main">
       <div className="instruments">
         {instruments.map(instrument => (
           <Item key={instrument.id} name={instrument.name} name={instrument.name} image={instrument.image} price={instrument.price}
@@ -40,6 +42,7 @@ function App() {
           handleCartAddition={() => handleCartAddition(instrument.id)}/>
         ))}
       </div>
+      </main>
       <div className="cart">
         <Cart cartItems={cartItems} totalCost={totalCost} />
         {cartItems.length > 0 && (
