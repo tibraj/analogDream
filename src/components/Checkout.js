@@ -33,7 +33,7 @@ function Checkout(stripe, totalCost) {
             <h4>Would you like to complete the purchase?</h4>
             <CardElement />
             <button
-                className="CheckoutForm-button"
+                className="btn"
                 type="submit"
                 disabled={status === 'submitting'}
             >

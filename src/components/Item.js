@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 
 export default function Item({name, image, price, sounds, effects, sequencer, yearOfRelease, handleCartAddition}) {
     return (
-    <div className='items'>
+    <div className='instrument'>
                 <h1 className='name'>{name}</h1>
                 <img src={image} alt=""/>
                 <h2 className='price'>${price}</h2>
@@ -13,7 +13,7 @@ export default function Item({name, image, price, sounds, effects, sequencer, ye
                 <p className='effects'>Effects: {effects}</p>
                 <p className='sequencer'>Sequencer: {sequencer}</p>
                 <p className='year-of-release'>Year of Release: {yearOfRelease}</p>
-                <button onClick={handleCartAddition}>Add to Cart</button>
+                <button class="btn" onClick={handleCartAddition}>Add to Cart</button>
             <br/><br/><br/><br/>
             </div>
     )
