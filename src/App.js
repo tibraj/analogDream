@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav.js'
 import Item from './components/Item.js'
 import instruments from './instruments/instrument.js'
 import Cart from './components/Cart.js'
@@ -29,7 +30,9 @@ function App() {
   );
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <header className="header">
+        <Nav />
+      </header>
       <div className="instruments">
         {instruments.map(instrument => (
           <Item key={instrument.id} name={instrument.name} name={instrument.name} image={instrument.image} price={instrument.price}
