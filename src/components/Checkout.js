@@ -29,19 +29,23 @@ function Checkout(stripe, totalCost) {
     }
 
     return (
-        <form className="CheckoutForm" onSubmit={submit}>
+        <form className="checkoutForm" onSubmit={submit}>
             <h4>Would you like to complete the purchase?</h4>
-            <CardElement />
-            <button
-                className="btn"
-                type="submit"
-                disabled={status === 'submitting'}
-            >
-            {status === 'submitting' ? 'Submitting' : 'Submit Order'}
-            </button>
-            {status === 'error' && (
-                <div className="CheckoutForm-error">Something went wrong.</div>
-            )}
+            <br/>
+            <div className="checkout-info">
+            <CardElement className="checkout-info"/>
+                <br/><br/>
+                <button
+                    className="btn"
+                    type="submit"
+                    disabled={status === 'submitting'}
+                >
+                {status === 'submitting' ? 'Submitting' : 'Submit Order'}
+                </button>
+                {status === 'error' && (
+                    <div className="CheckoutForm-error">Something went wrong.</div>
+                )}
+            </div>
         </form>
     )
 }

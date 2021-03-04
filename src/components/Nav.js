@@ -10,6 +10,7 @@ const Nav = () => {
             </h1>
             <a href="#">Synthesizers</a>
             <a href="#">Drum Machines</a>
+            <a href="#cart">Cart</a>
         </nav>
     )
 }

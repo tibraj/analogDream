@@ -7,6 +7,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: #fff;
+  /* text-align: center; */
 }
 
 .btn {
@@ -78,3 +79,45 @@ img.icon {
   padding-bottom: 2px;
 }
 
+#cart {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#cart h1 {
+  color:#4DA8DA;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  border: 1px solid #c0c0c0;
+  border-radius: 1px;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.cart-image {
+  width: 275px;
+  height: 125px;
+}
+
+.total-cost {
+  padding-top: 25px;
+  padding-bottom: 2px;
+  color: #4DA8DA
+}
+
+.checkoutForm {
+  margin: 35px 25px;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.checkout-info {
+  text-align: center;
+  width: 100%;
+}
