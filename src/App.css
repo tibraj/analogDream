@@ -121,3 +121,31 @@ img.icon {
   text-align: center;
   width: 100%;
 }
+
+@media (max-width: 800px) {
+    .instruments {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav a {
+      margin-left: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .instruments {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .nav{
+    display: block;
+    padding-bottom: .5rem;
+  }
+
+  .nav a {
+    padding: 1.5rem;
+    margin-bottom: 3px;
+  }
+}
